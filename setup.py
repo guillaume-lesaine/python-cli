@@ -1,6 +1,8 @@
+from typing import Dict
+
 from setuptools import setup
 
-version = {}
+version: Dict[str, str] = {}
 with open("src/myclilibrary/version.py") as f:
     exec(f.read(), version)
 

@@ -8,7 +8,7 @@ def cli():
 
 @cli.command()
 @click.option("--count", help="number of greetings", required=True)
-def initdb(count):
+def initdb(count: str) -> None:
     """Simple program that greets NAME for a total of COUNT times."""
     click.echo(f"Initialized the database '{count}'")
 
