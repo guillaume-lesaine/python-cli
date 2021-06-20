@@ -23,4 +23,5 @@ setup(
     entry_points={
         "console_scripts": ["myclilibrary=myclilibrary.__main__:cli"]
     },
+    python_requires=">=3.7",
 )
