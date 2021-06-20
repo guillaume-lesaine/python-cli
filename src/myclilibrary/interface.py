@@ -7,12 +7,11 @@ def cli():
 
 
 @cli.command()
-@click.option("--count", help="number of greetings", required=True)
-def initdb(count: str) -> None:
-    """Simple program that greets NAME for a total of COUNT times."""
-    click.echo(f"Initialized the database '{count}'")
+@click.option("--name", help="Name of the database", required=True)
+def initdb(name: str) -> None:
+    """Initialize a database."""
 
+    if name == "oops":
+        raise ValueError("Value 'oops' is forbidden for option '--name'.")
 
-@cli.command()
-def dropdb():
-    click.echo("Dropped the database")
+    click.echo(f"Initialized the database '{name}'")

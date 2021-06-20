@@ -7,4 +7,4 @@ python_version = 3.7
 pretty = true
 
 [tool.isort]
-known_third_party = ["click", "myclilibrary", "setuptools"]
+known_third_party = ["click", "myclilibrary", "pytest", "setuptools"]
