@@ -8,3 +8,6 @@ pretty = true
 
 [tool.isort]
 known_third_party = ["click", "myclilibrary", "pytest", "setuptools"]
+
+[tool.coverage.run]
+source_pkgs = ["myclilibrary"]
