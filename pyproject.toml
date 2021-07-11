@@ -3,7 +3,7 @@
 line-length = 79
 
 [tool.mypy]
-python_version = 3.7
+python_version = 3.8
 pretty = true
 
 [tool.isort]
@@ -32,6 +32,9 @@ pytest = "^6.2.4"
 types-click = "^7.1.2"
 tox = "^3.23.1"
 pytest-cov = "^2.12.1"
+
+[tool.poetry.scripts]
+myclilibrary = 'myclilibrary.__main__:cli'
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
