@@ -6,9 +6,12 @@ name: myclilibrary
 on:
   push:
     branches: [ master ]
+    paths-ignore:
+      - 'README.md'
   pull_request:
     branches: [ master ]
-
+      - 'README.md'
+      
 jobs:
   build:
 
