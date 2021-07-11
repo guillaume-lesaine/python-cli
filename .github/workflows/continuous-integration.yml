@@ -41,7 +41,7 @@ jobs:
         poetry run mypy src
     - name: Test with Tox
       run: |
-        poetry run tox
+        poetry run tox -e py
     - name: Upload pytest test results
       uses: actions/upload-artifact@v2
       with:
