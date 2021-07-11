@@ -11,7 +11,7 @@ repos:
     rev: v2.19.4
     hooks:
     -   id: pyupgrade
-        args: [--py37-plus]
+        args: [--py38-plus]
 -   repo: https://gitlab.com/pycqa/flake8
     rev: 3.9.2
     hooks:
@@ -20,3 +20,4 @@ repos:
     rev: v0.902
     hooks:
     -   id: mypy
+        additional_dependencies: [types-click==7.1.2]

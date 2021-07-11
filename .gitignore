@@ -7,3 +7,5 @@ __pycache__
 junit
 htmlcov
 coverage.xml
+.tox
+poetry.lock
